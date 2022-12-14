@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+body{
+  background-color: #25008a;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#pricing{
+  width: 989px;
+  margin: 100px auto;
+  font-family: 'Open Sans', Helvetica;
+}
+
+.price_card{
+  width: 300px;
+  background: rgb(255, 255, 255);
+  display: inline-table;
+  top: 0;
+}
+.price_card:not(:last-child){
+  margin-right: 40px;
+}
+.header{
+  color: rgb(255, 255, 255);
+}
+.alpha .header{
+  background: rgb(245, 166, 35);
+}
+.bravo .header{
+  background: rgb(246, 77, 77);
+}
+.charlie .header{
+  background: rgb(48, 219, 181);
+}
+.price{
+  width: 100%;
+  font-size: 60px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 30px 0 10px;
+}
+.name{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  padding: 0 0 30px;
+}
+.features{
+  list-style: none;
+  text-align: center;
+  color: rgb(138, 138, 138);
+  margin: 0;
+  padding: 0;
+}
+.features li{
+  margin: 0 35px;
+  padding: 20px 15px;
+  width: 200px;
+}
+.features li:not(:last-child){
+  border: 1px solid rgb(242, 242, 242);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+button{
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px auto 35px;
+}
+.alpha button{
+  background: rgb(245, 166, 35);
+}
+.bravo button{
+  background: rgb(246, 77, 77);
+}
+.charlie button{
+  background: rgb(48, 219, 181);
+}
+.tip{
+  font-family: 'Indie Flower';
+  position: absolute;
+  color: rgb(117, 117, 117);
+  margin: 10px 5px;
+}
+
+/* footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* Header */
+.headerCarousel{
+  height: 500px;
+
+}
