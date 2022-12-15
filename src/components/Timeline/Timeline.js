@@ -7,17 +7,7 @@ const Timelines = () => {
   };
   return (
     <>
-      {/* <Radio.Group
-        onChange={onChange}
-        value={mode}
-        style={{
-          marginBottom: 20,
-        }}
-      >
-        <Radio value="left">Left</Radio>
-        <Radio value="right">Right</Radio>
-        <Radio value="alternate">Alternate</Radio>
-      </Radio.Group> */}
+      <h3>Features That Help You</h3>
       <Timeline mode={mode}>
         <Timeline.Item label="Ease">Mobile app for on-the-go learning
 </Timeline.Item>

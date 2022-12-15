@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import { Player } from '@lottiefiles/react-lottie-player';
+import 'animate.css';
 const contentStyle = {
   height: '500px',
   color: '#fff',
@@ -23,7 +24,7 @@ const HeaderCarousel = () => (
        style={{ height: '300px', width: '300px' }}
        ></Player>
   </Col>
-  <Col span={12}>Transform the way you learn with EdTechX - the leading education technology platform.</Col>
+  <Col span={12}><h1 className=' headerText animate__animated animate__zoomInUp'>Transform the way you learn with EdTechX - the leading education technology platform.</h1></Col>
 </Row>
 </div>
 );

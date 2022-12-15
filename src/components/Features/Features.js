@@ -7,6 +7,7 @@ const Features = () => (
   
   <Row>
       <Col span={12}>
+      <div className='cards'>
       <Card
     hoverable
     style={{
@@ -24,8 +25,11 @@ const Features = () => (
     <Meta title="Interactive lessons and exercises
 " description="www.instagram.com" />
   </Card>
+  </div>
+
       </Col>
       <Col span={12}>
+      <div className='cards'>
       <Card
     hoverable
     style={{
@@ -44,6 +48,7 @@ const Features = () => (
     <Meta title="Collaborative tools for group work
 " description="www.instagram.com" />
   </Card>
+  </div>
       </Col>
     </Row>
   

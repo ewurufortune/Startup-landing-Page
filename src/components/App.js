@@ -41,6 +41,7 @@ const App = () => {
       
       <HeaderCarousel/>
       <Divider />
+      
       <Content
         style={{
           padding: '0 50px',
@@ -48,16 +49,20 @@ const App = () => {
       >
      
         <div
-          className="site-layout-content"
+          className="siteLayoutContent"
           style={{
             background: colorBgContainer,
+            padding: '40px 50px',
+            margin:'10% 0'
+
           }}
         >
+        <div className='contentComponent features'>
          <FadeIn
       from="bottom"
       positionOffset={0}
       triggerOffset={0}
-      delayInMilliseconds={800}
+      delayInMilliseconds={600}
     >
     <Row>
       <Col span={12}>
@@ -65,16 +70,43 @@ const App = () => {
       </Col>
       <Col span={12}>
       <Features />
+     
 
       </Col>
     </Row>
      
     </FadeIn>
+    </div>
+         
+    <div
+          className="siteLayoutContent"
+          style={{
+            background: colorBgContainer,
+            padding: '40px 50px',
+            margin:'10% 0'
+
+          }}
+        >
+    <div className='contentComponent team'>
         <Team />
+        </div>
+        </div>
+        <div
+          className="siteLayoutContent"
+          style={{
+            background: 'blue',
+            padding: '40px 50px',
+            margin:'10% 0'
+
+          }}
+        >
+        <div className='contentComponent statistics'>
         <Statistics />
+        </div>
+        </div>
+<div className='contentComponent pricing'>
        <Pricing />
-        {/* <Second call to action /> */}
-        
+       </div>
         </div>
         <SocialProof />
       </Content> 

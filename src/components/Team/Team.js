@@ -13,7 +13,8 @@ const data = Array.from({
     'EdTechX is a personal study tool that enable learners aquire any skill on-demand.',
   content:
     ' Our team is made up of passionate educators and top-notch technologists, dedicated to improving the learning experience for students everywhere. Educators and innovative technologists who are committed to providing the best possible learning experience for students.',
-}));
+}
+));
 
 const Team = () => (
   <List
