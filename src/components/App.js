@@ -9,9 +9,13 @@ import Pricing from './Pricing/Pricing';
 import SocialProof from './SocialProof/SocialProof';
 import Footere from './Footer/Footer';
 import { Space } from 'antd';
+import Navbar from './Navbar/Navbar';
+import { Typography } from 'antd';
+
 
 import {  Layout, Menu, theme ,Row,Col,Divider} from 'antd';
 const { Header, Content, Footer } = Layout;
+const { Title } = Typography;
 
 const App = () => {
   const {
@@ -23,18 +27,7 @@ const App = () => {
       <Header>
      
         <div className="logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={new Array(5).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: `nav ${key}`,
-            };
-          })}
-        />
+       <Navbar />
       
 
       </Header>
@@ -77,13 +70,33 @@ const App = () => {
      
     </FadeIn>
     </div>
-         
+    </div>
+
     <div
           className="siteLayoutContent"
           style={{
-            background: colorBgContainer,
+            background: 'blue',
             padding: '40px 50px',
-            margin:'10% 0'
+            marginTop:'10%',
+           
+            backgroundColor:' #25008a',
+backgroundImage: 'url("https://www.transparenttextures.com/patterns/stardust.png")'
+          }}
+        >
+        <div className='contentComponent statistics'>
+        <Title>
+        <Statistics />
+
+        </Title>
+        </div>
+        </div>
+
+    <div
+          className="siteLayoutContent"
+          style={{
+            padding: '40px 50px',
+            margin:'10% 0',
+         
 
           }}
         >
@@ -91,23 +104,11 @@ const App = () => {
         <Team />
         </div>
         </div>
-        <div
-          className="siteLayoutContent"
-          style={{
-            background: 'blue',
-            padding: '40px 50px',
-            margin:'10% 0'
-
-          }}
-        >
-        <div className='contentComponent statistics'>
-        <Statistics />
-        </div>
-        </div>
+   
 <div className='contentComponent pricing'>
        <Pricing />
        </div>
-        </div>
+      
         <SocialProof />
       </Content> 
 

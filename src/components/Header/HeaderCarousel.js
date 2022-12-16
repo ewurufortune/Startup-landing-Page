@@ -23,6 +23,14 @@ const HeaderCarousel = () => (
        src="https://assets8.lottiefiles.com/private_files/lf30_TBKozE.json"
        style={{ height: '300px', width: '300px' }}
        ></Player>
+        <Player
+       
+       autoplay={true}
+       loop={true}
+       controls={false}
+       src="https://assets3.lottiefiles.com/packages/lf20_l4ny0jjm.json"
+       style={{ height: '300px', width: '300px' }}
+       ></Player>
   </Col>
   <Col span={12}><h1 className=' headerText animate__animated animate__zoomInUp'>Transform the way you learn with EdTechX - the leading education technology platform.</h1></Col>
 </Row>
