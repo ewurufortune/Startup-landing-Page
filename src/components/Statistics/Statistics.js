@@ -11,7 +11,7 @@ return(
 <>
     <Divider orientation="left">Look At The Numbers</Divider>
     <Row justify="center" align="top">
-      <Col span={24}>
+      <Col  xs={24} sm={24} md={24} lg={24} xl={24}>
       <FadeIn
       from="top"
       positionOffset={100}
@@ -22,63 +22,38 @@ return(
     </FadeIn>
 
       </Col>
-      <Col span={12}>
+      <Col  xs={24} sm={24} md={12} lg={12} xl={12}>
       <FadeIn
       from="left"
       positionOffset={400}
       triggerOffset={200}
       delayInMilliseconds={400}
     >
-<BasicStats />
+    <div className='basicStats'>
+    <BasicStats />
+
+    </div>
     </FadeIn>
 
 
       </Col>
-      <Col span={12}>
+      <Col  xs={24} sm={24} md={12} lg={12} xl={12}>
       <FadeIn
       from="right"
       positionOffset={400}
       triggerOffset={200}
       delayInMilliseconds={600}
     >
-     <CardStats /> 
+    <div>
+    <CardStats /> 
+
+    </div>
 
     </FadeIn>
      </Col>
       
     </Row>
-{/* 
-    <Divider orientation="left">Align Middle</Divider>
-    <Row justify="space-around" align="middle">
-      <Col span={4}>
-        <DemoBox value={100}>col-4</DemoBox>
-      </Col>
-      <Col span={4}>
-        <DemoBox value={50}>col-4</DemoBox>
-      </Col>
-      <Col span={4}>
-        <DemoBox value={120}>col-4</DemoBox>
-      </Col>
-      <Col span={4}>
-        <DemoBox value={80}>col-4</DemoBox>
-      </Col>
-    </Row>
 
-    <Divider orientation="left">Align Bottom</Divider>
-    <Row justify="space-between" align="bottom">
-      <Col span={4}>
-        <DemoBox value={100}>col-4</DemoBox>
-      </Col>
-      <Col span={4}>
-        <DemoBox value={50}>col-4</DemoBox>
-      </Col>
-      <Col span={4}>
-        <DemoBox value={120}>col-4</DemoBox>
-      </Col>
-      <Col span={4}>
-        <DemoBox value={80}>col-4</DemoBox>
-      </Col>
-    </Row> */}
   </>
 )
   }

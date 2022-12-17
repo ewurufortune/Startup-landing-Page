@@ -11,7 +11,7 @@ const ActiveStats = () => {
 
   const count= setInterval(randomNum,3000)
    function randomNum(){
-    const selectNo=Math.floor(Math.random()*1000+203844)
+    const selectNo=Math.floor(Math.random()*1000+20384)
    setUsers(selectNo)
    clearInterval(count)
 

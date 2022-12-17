@@ -4,7 +4,7 @@ import { Card, Col, Row, Statistic } from 'antd';
 const CardStats = () => (
   <div className="site-statistic-demo-card">
     <Row gutter={16}>
-      <Col span={12}>
+      <Col xs={12} sm={12} md={12} lg={12} xl={12}>
         <Card>
           <Statistic
             title="Retention Rate for our courses"
@@ -18,7 +18,7 @@ const CardStats = () => (
           />
         </Card>
       </Col>
-      <Col span={12}>
+      <Col xs={12} sm={12} md={12} lg={12} xl={12}>
         <Card>
           <Statistic
             title="Reduction In Homework time"

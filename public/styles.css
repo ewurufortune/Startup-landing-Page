@@ -206,20 +206,39 @@ ul{
   
 
 }
-.headerText{
-  position: relative;
-font-size: 3rem;
-  font-weight: 900;
-  margin-top: 10%;
-  margin-right: 5%;
-  width: 80%;
-  background-color: #f3ec78;
-background-image: linear-gradient(45deg, #f3ec78, #af4261);
+.headerTag{
+
+background-image: linear-gradient(45deg, #6E3CBC, #7267CB,#98BAE7,#B8E4F0);
 background-size: 100%;
 -webkit-background-clip: text;
 -moz-background-clip: text;
 -webkit-text-fill-color: transparent; 
 -moz-text-fill-color: transparent;}
+.headerText {
+  position: relative;
+  font-size: 3rem;
+    font-weight: 900;
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 80%;
+   color: #B8E4F0;
+    background-size: 100%;
+
+
+    text-align: left;
+  -webkit-animation: glow 5s ease-in-out infinite alternate;
+  -moz-animation: glow 5s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #B8E4F0, 0 0 0px #B8E4F0, 0 0 5px #7267CB, 0 0 10px #6E3CBC, 0 0 15px #7267CB, 0 0 20px #6E3CBC, 0 0 25px #7267CB;
+  }
+  to {
+    text-shadow: 0 0 10px #B8E4F0, 0 0 15px #98BAE7, 0 0 20px #98BAE7, 0 0 25px #98BAE7, 0 0 30px #98BAE7, 0 0 35px #98BAE7, 0 0 40px #98BAE7;
+  }
+}
 /* content */
 .contentComponent{
   margin: 30px 0;
@@ -228,6 +247,7 @@ background-size: 100%;
   margin-top: 10%;
 }
 .siteLayoutContent{
+  border-radius: 3%;
   background-color: #fff;
 }
 

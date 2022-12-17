@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col,Button } from 'antd';
+import {ThunderboltTwoTone} from '@ant-design/icons';
 import { Player } from '@lottiefiles/react-lottie-player';
 import 'animate.css';
 const contentStyle = {
@@ -14,7 +15,7 @@ const contentStyle = {
 const HeaderCarousel = () => (
   <div className=''>
   <Row className='headerCarousel'>
-  <Col span={12}>
+  <Col flex={'1 1 200px'}>
   <Player
        
        autoplay={true}
@@ -29,10 +30,14 @@ const HeaderCarousel = () => (
        loop={true}
        controls={false}
        src="https://assets3.lottiefiles.com/packages/lf20_l4ny0jjm.json"
-       style={{ height: '300px', width: '300px' }}
+       style={{ height: '300px', width: '300px',marginRight:'10%' }}
        ></Player>
   </Col>
-  <Col span={12}><h1 className=' headerText animate__animated animate__zoomInUp'>Transform the way you learn with EdTechX - the leading education technology platform.</h1></Col>
+  <Col flex={'1 1 200px'}>
+  <h1 className=' headerText animate__animated'>Transform the way you learn with EdTechX </h1>
+  <h2 className='headerTag'>- the leading education technology platform.</h2>
+  <Button icon={<ThunderboltTwoTone />} size={'large'} href="https://www.google.com" ghost>Signup</Button>
+  </Col>
 </Row>
 </div>
 );
