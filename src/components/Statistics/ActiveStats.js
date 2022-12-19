@@ -18,7 +18,7 @@ const ActiveStats = () => {
   }
   
     return (
-      <Row gutter={16}>
+      <Row style={{marginBottom:'10%'}} gutter={16}>
         <Col span={24}>
         <Statistic valueStyle={{color:'#AAFF00', fontSize:'5rem'}} align='left' title=<h3 className='currentlyOnline'>Currently Online</h3> value={users} suffix="" />
     </Col>

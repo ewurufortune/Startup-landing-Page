@@ -18,21 +18,39 @@ const { Header, Content, Footer } = Layout;
 const { Title } = Typography;
 
 const App = () => {
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
+  const winSize=getWindowSize().innerWidth
+  function selSize(){
+    let size
+    if (winSize<700){
+  size='100% 0'
+  
+    }else{
+      size='100% 0'
+  
+    }
+    return size
+  }
+  const marge=selSize()
+  console.log(getWindowSize().innerWidth);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
    <>
    
-      <Header>
      
         <div className="logo" />
        <Navbar />
+      <div className='header'>
+      <HeaderCarousel/>
+
+      </div>
       
 
-      </Header>
-      
-      <HeaderCarousel/>
       <Divider />
       
       <Content
@@ -42,11 +60,11 @@ const App = () => {
       >
      
         <div
-          className="siteLayoutContent"
+          className=" siteLayoutContent"
           style={{
             background: colorBgContainer,
             padding: '40px 50px',
-            margin:'10% 0'
+        margin:'30% 0'
 
           }}
         >
@@ -78,12 +96,11 @@ const App = () => {
             background: 'blue',
             padding: '40px 50px',
             marginTop:'10%',
-           
             backgroundColor:' #25008a',
 backgroundImage: 'url("https://www.transparenttextures.com/patterns/stardust.png")'
           }}
         >
-        <div className='contentComponent statistics'>
+        <div className='statisticsComponent statistics'>
         <Title>
         <Statistics />
 
