@@ -17,7 +17,8 @@ const HeaderCarousel = () => (
   <div className="headerCarousel">
     <Row className="" type="flex" justify="center" align="middle">
       <Col xs={4} sm={12}>
-        <Player
+      <div className='changeOpacity'>
+      <Player
           autoplay
           loop
           controls={false}
@@ -31,6 +32,8 @@ const HeaderCarousel = () => (
           src="https://assets3.lottiefiles.com/packages/lf20_l4ny0jjm.json"
           style={{ height: '300px', width: '300px', marginRight: '10%' }}
         ></Player>
+      </div>
+
       </Col>
       <Col xs={8} sm={12}>
       <div class="row">

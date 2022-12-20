@@ -209,6 +209,15 @@ ul{
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+    
+}
+.changeOpacity{
+  opacity: 0.4;
+}
+.headerTag{
+font-size: 1rem;}
+.signupButton{
+  margin-top: -55rem;
 }
 }
 @media(max-width: 574px){
@@ -216,7 +225,9 @@ ul{
     width: 100%;
 }
 }
-
+.signupButton{
+  margin-top: 2rem;
+}
 /* Header */
 .headerCarousel{
   height: 400px;
