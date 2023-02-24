@@ -16,7 +16,10 @@ const contentStyle = {
 const HeaderCarousel = () => (
   <div className="headerCarousel">
     <Row className="" type="flex" justify="center" align="middle">
-      <Col xs={4} sm={12}>
+      <Col 
+      xs={4}
+      //  sm={12}
+      >
       <div className='changeOpacity'>
       <Player
           autoplay
@@ -35,7 +38,10 @@ const HeaderCarousel = () => (
       </div>
 
       </Col>
-      <Col xs={8} sm={12}>
+      <Col 
+      xs={8} 
+      // sm={12}
+      >
       <div class="row">
        <FadeIn
       from="bottom"
@@ -48,7 +54,7 @@ const HeaderCarousel = () => (
         </h1>
         </FadeIn>
         <h2 className="headerTag"  style={{marginTop:'2rem'}}>- the leading education technology platform.</h2>
-        <div style={{marginTop:'2rem'}}>
+        <div className='signupButton'>
         <Button
           icon={<ThunderboltTwoTone />}
           size={"large"}
