@@ -13,9 +13,9 @@ const Pricing = () => (
       <div class="pricing-plan">
       <FadeIn
       from="left"
-      positionOffset={300}
+      positionOffset={20}
       triggerOffset={200}
-      delayInMilliseconds={400}
+      delayInMilliseconds={200}
     >
       <Player
        
@@ -39,9 +39,9 @@ const Pricing = () => (
       <div class="pricing-plan">
       <FadeIn
       from="top"
-      positionOffset={300}
+      positionOffset={30}
       triggerOffset={100}
-      delayInMilliseconds={400}
+      delayInMilliseconds={200}
     >
       <Player
        
@@ -65,9 +65,9 @@ const Pricing = () => (
       <div class="pricing-plan">
       <FadeIn
       from="right"
-      positionOffset={300}
+      positionOffset={30}
       triggerOffset={200}
-      delayInMilliseconds={400}
+      delayInMilliseconds={200}
     >
         <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img"/>
         <h2 class="pricing-header">Enterprise</h2>

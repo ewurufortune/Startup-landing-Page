@@ -26,7 +26,7 @@ const HeaderCarousel = () => (
           loop
           controls={false}
           src="https://assets8.lottiefiles.com/private_files/lf30_TBKozE.json"
-          style={{ height: '300px', width: '300px' }}
+          style={{ height: '300px', width: '300px'}}
         ></Player>
         <Player
           autoplay

@@ -14,9 +14,9 @@ return(
       <Col  xs={24} sm={24} md={24} lg={24} xl={24}>
       <FadeIn
       from="top"
-      positionOffset={100}
+      positionOffset={30}
       triggerOffset={50}
-      delayInMilliseconds={800}
+      delayInMilliseconds={200}
     >
    <ActiveStats/>
     </FadeIn>
@@ -25,9 +25,9 @@ return(
       <Col  xs={24} sm={24} md={12} lg={12} xl={12}>
       <FadeIn
       from="left"
-      positionOffset={400}
+      positionOffset={30}
       triggerOffset={200}
-      delayInMilliseconds={400}
+      delayInMilliseconds={200}
     >
     <div className='basicStats'>
     <BasicStats />
@@ -40,9 +40,9 @@ return(
       <Col  xs={24} sm={24} md={12} lg={12} xl={12}>
       <FadeIn
       from="right"
-      positionOffset={400}
+      positionOffset={30}
       triggerOffset={200}
-      delayInMilliseconds={600}
+      delayInMilliseconds={200}
     >
     <div>
     <CardStats /> 

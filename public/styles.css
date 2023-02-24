@@ -11,10 +11,16 @@ Header{
   position: relative;
 }
 
+
 @media (max-width: 700px) {
 body{
-  background-color: red;
+ 
 max-width: max-content;
+}
+.headerCarousel{
+  height: 400px;
+  margin-bottom: 6rem;
+
 }
 }
 
@@ -198,7 +204,10 @@ ul{
   color: #24262b;
   background-color: #ffffff;
 }
+.changeOpacity{
+  margin-left: -15rem;
 
+}
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -207,12 +216,14 @@ ul{
     
 }
 .changeOpacity{
+  margin-left: 0rem;
   opacity: 0.4;
 }
 .headerTag{
 font-size: 1rem;}
 .signupButton{
   margin-top: -55rem;
+
 }
 }
 @media(max-width: 574px){
